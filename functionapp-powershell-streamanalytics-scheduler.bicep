@@ -14,7 +14,6 @@ resource appServicePlan 'Microsoft.Web/serverfarms@2022-09-01' = {
     reserved: true
     zoneRedundant: false
   }
-  tags: context.tags
 }
 
 resource workloadStorage 'Microsoft.Storage/storageAccounts@2021-04-01' existing = {
